@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  background-color: orange;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  align-self: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: black;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 8px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.primary {
+  background-color: orange;
+  color: white;
+}
+
+.secondary {
+  background-color: white;
+  color: black;
+  border: 2px solid orange;
+}
+
+.primary:hover {
+  background-color: darkorange;
+}
+
+.secondary:hover {
+  background-color: orange;
+  color: white;
+}
