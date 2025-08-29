@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentee Login</title>
+  <link rel="stylesheet" href="../assets/css/student_signin.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="icon">👤</div>
+      <h2>Mentee Login</h2>
+      <p>Welcome back! Please login to continue.</p>
+
+      <!-- ✅ Added ID for JS -->
+      <form id="studentForm" method="POST">
+        <div class="input-group">
+          <label for="email">University Email *</label>
+          <input type="email" id="email" name="email" placeholder="Enter your university email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+
+      <div class="extra-links">
+        <a href="#">Forgot Password?</a>
+        <p>Don’t have an account? <a href="student_signup.html">Sign up here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Correct script path -->
+  <script src="../assets/js/student_signin.js"></script>
+</body>
+
+</html>
