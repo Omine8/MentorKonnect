@@ -20,6 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!valid) {
       e.preventDefault();
     }
+
+    fetch("http://localhost:8080/login", {
+      method : "POST", 
+      headers : {"Content-Type": "application/json"},
+      body : JSON.stringify(data)
+    })
+    .then(res => {
+      if(!res.ok) throw new Error("Signup Failed.");
+      return res.json();
+    })
+    .then(result => {
+      alert("Signup Succesfull for " + result.email)
+    })
+    .catch(err => {
+      alert("❌ " + err.message)
+    });
+
   });
 
   function showError(input, message) {

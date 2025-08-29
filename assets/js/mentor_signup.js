@@ -28,9 +28,32 @@ document.addEventListener('DOMContentLoaded', function () {
       valid = false;
     }
 
-    if (!valid) {
-      e.preventDefault();
-    }
+    // if (!valid) {
+    //   e.preventDefault();
+    // }
+
+    if(!valid) return;
+
+    const data = {
+      email : emailInput.value,
+      password : passwordInput.value
+    };
+
+    fetch("http://127.0.0.1:8080/register", {
+      method : "POST", 
+      headers : {"Content-Type": "application/json"},
+      body : JSON.stringify(data)
+    })
+    .then(res => {
+      if(!res.ok) throw new Error("Signup Failed.");
+      return res.json();
+    })
+    .then(result => {
+      alert("Signup Succesfull for " + result.email)
+    })
+    .catch(err => {
+      alert("❌ " + err.message)
+    });
   });
 
   function showError(input, message) {
