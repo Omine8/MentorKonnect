@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Background */
 body {
   background-color: #fff;
   display: flex;
@@ -15,7 +14,6 @@ body {
   height: 100vh;
 }
 
-/* Login Container */
 .login-container {
   display: flex;
   justify-content: center;
@@ -23,7 +21,6 @@ body {
   width: 100%;
 }
 
-/* Login Box */
 .login-box {
   background: #fff;
   border: 2px solid orange;
@@ -34,22 +31,12 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.back-link {
-  align-self: flex-start;
-  text-decoration: none;
-  color: orange;
-  margin-bottom: 15px;
-  font-size: 14px;
-}
-
-/* Icon */
 .icon {
   font-size: 50px;
   margin-bottom: 10px;
   color: orange;
 }
 
-/* Title */
 h2 {
   color: #000;
   margin-bottom: 8px;
@@ -60,7 +47,6 @@ p {
   margin-bottom: 20px;
 }
 
-/* Input Fields */
 .input-group {
   text-align: left;
   margin-bottom: 15px;
@@ -89,7 +75,6 @@ p {
   box-shadow: 0 0 6px rgba(255,165,0,0.4);
 }
 
-/* Login Button */
 .login-btn {
   background-color: orange;
   border: none;
@@ -106,7 +91,6 @@ p {
   background-color: #e69500;
 }
 
-/* Extra Links */
 .extra-links {
   margin-top: 15px;
 }
