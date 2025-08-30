@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const emailInput = form.querySelector('input[type="email"]');
   const passwordInput = form.querySelector('input[type="password"]');
 
-  form.addEventListener('submit', function (e) {
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault(); // stop normal form submission
+
     let valid = true;
     form.querySelectorAll('.error-msg').forEach(el => el.remove());
 
@@ -17,26 +19,37 @@ document.addEventListener('DOMContentLoaded', function () {
       valid = false;
     }
 
-    if (!valid) {
-      e.preventDefault();
+    if (!valid) return;
+
+    // ✅ Send to Spring Boot backend
+    try {
+      const response = await fetch("http://localhost:8080/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: emailInput.value,
+          password: passwordInput.value
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error("Login failed");
+      }
+
+      const user = await response.json();
+      alert("Login successful! Welcome " + user.email);
+
+      // redirect based on role
+      if (user.userType === "MENTOR") {
+        window.location.href = "../dashboards/mentor/mentor.html";
+      } else if (user.userType === "MENTEE") {
+        window.location.href = "../dashboards/mentee/mentee.html";
+      }
+
+    } catch (err) {
+      console.error(err);
+      showError(passwordInput, "Invalid email or password.");
     }
-
-    fetch("http://localhost:8080/login", {
-      method : "POST", 
-      headers : {"Content-Type": "application/json"},
-      body : JSON.stringify(data)
-    })
-    .then(res => {
-      if(!res.ok) throw new Error("Signup Failed.");
-      return res.json();
-    })
-    .then(result => {
-      alert("Signup Succesfull for " + result.email)
-    })
-    .catch(err => {
-      alert("❌ " + err.message)
-    });
-
   });
 
   function showError(input, message) {
