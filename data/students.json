@@ -1,0 +1,47 @@
+[
+  {
+    "photo": "photos/1.jpg",
+    "rollno": "200101001",
+    "name": "Ankit Sharma",
+    "fathername": "Ramesh Sharma",
+    "branch": "Computer Science",
+    "hostel": "Hostel-5",
+    "cgpa": 8.7
+  },
+  {
+    "photo": "photos/2.jpg",
+    "rollno": "200101002",
+    "name": "Priya Das",
+    "fathername": "Suresh Das",
+    "branch": "Electronics",
+    "hostel": "Hostel-3",
+    "cgpa": 9.1
+  },
+  {
+    "photo": "photos/3.jpg",
+    "rollno": "200101003",
+    "name": "Rahul Gupta",
+    "fathername": "Manoj Gupta",
+    "branch": "Mechanical",
+    "hostel": "Hostel-7",
+    "cgpa": 7.9
+  },
+  {
+    "photo": "photos/4.jpg",
+    "rollno": "200101004",
+    "name": "Sneha Reddy",
+    "fathername": "Prakash Reddy",
+    "branch": "Information Technology",
+    "hostel": "Hostel-2",
+    "cgpa": 8.4
+  },
+  {
+    "photo": "photos/5.jpg",
+    "rollno": "200101005",
+    "name": "Arjun Patnaik",
+    "fathername": "Debasis Patnaik",
+    "branch": "Civil",
+    "hostel": "Hostel-6",
+    "cgpa": 7.5
+  }
+]
