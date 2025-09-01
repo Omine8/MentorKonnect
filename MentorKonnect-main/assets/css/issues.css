@@ -1,0 +1,147 @@
+h2, h3 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+#issueError,
+#mentorIssueError,
+#updateError {
+    font-size: 1em;
+    margin: 5px 0 10px 0;
+}
+
+ul#menteeIssuesList,
+ul#mentorIssuesList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+ul#menteeIssuesList li,
+ul#mentorIssuesList li {
+    background: #f5f7fa;
+    border: 1px solid #dbe4ee;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button,
+input[type="submit"] {
+    background: orange;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: darkorange;
+}
+
+form#create-issue-form {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+form#create-issue-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: orange;
+}
+
+form#create-issue-form input[type="text"],
+form#create-issue-form select,
+form#create-issue-form textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border: 1px solid #bfc9d9;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+form#create-issue-form textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+.issue-detail-container {
+    background: #fffdfa;
+    border: 1.5px solid #ffd580;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    padding: 28px 32px 22px 32px;
+    box-shadow: 0 2px 16px rgba(255, 165, 0, 0.08);
+}
+
+.issue-detail-container h2 {
+    color: orange;
+    margin-bottom: 12px;
+    font-size: 1.7em;
+}
+
+.issue-detail-container p {
+    margin: 10px 0 14px 0;
+    font-size: 1.08em;
+    color: #333;
+}
+
+.issue-detail-container b {
+    color: #2a3d66;
+}
+
+.issue-detail-container i {
+    color: #888;
+}
+
+.issue-detail-container #backBtn {
+    background: #fff;
+    color: orange;
+    border: 1px solid orange;
+    margin-bottom: 18px;
+    font-weight: bold;
+    padding: 6px 18px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.issue-detail-container #backBtn:hover {
+    background: orange;
+    color: #fff;
+}
+
+.issue-detail-container button:not(#backBtn) {
+    background: orange;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 16px;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+
+.issue-detail-container button:not(#backBtn):hover {
+    background: darkorange;
+}
+
+#updateError {
+    color: red;
+    margin-top: 12px;
+    font-size: 1em;
+}

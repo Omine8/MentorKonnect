@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentee Dashboard</title>
+  <link rel="stylesheet" href="../../assets/css/mentee.css">
+  <link rel="stylesheet" href="../../assets/css/issues.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">MentorKonnect</div>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <ul>
+        <li onclick="loadPage('profile')">👤 My Profile</li>
+        <li onclick="loadPage('mentor')">🧑‍🏫 Mentor Details</li>
+        <li onclick="loadPage('chat')">💬 Chat</li>
+        <li onclick="loadPage('leave')">📝 Leave Request</li>
+        <li onclick="loadPage('issues')">📢 Issues</li>
+        <li onclick="loadPage('timetable')">📅 Mentor's Timetable</li>
+        <li onclick="loadPage('sap')">Go To SAP Portal</li>
+      </ul>
+    </aside>
+    <main class="content" id="content">
+      <h2>Welcome Student 👋</h2>
+      <p>Select a feature from the left sidebar to get started.</p>
+    </main>
+  </div>
+
+  <script type="module" src="../../assets/js/mentee.js"></script>
+</body>
+
+</html>
