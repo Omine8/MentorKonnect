@@ -20,7 +20,7 @@ This project is still under development. It currently has only the basic feature
 ---
 
 ## 🛠️ Tech Stack  
-- **Frontend:** React.js (basic setup, not fully optimized)  
+- **Frontend:** HTML/CSS/JS (basic setup, not fully optimized)  
 - **Backend:** Spring Boot (Java)  
 - **Database:** PostgreSQL  
 
