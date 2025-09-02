@@ -1,13 +1,13 @@
-# ⚠️ Work in Progress  
-
-This project is still under development. It currently has only the basic features and is **not user-friendly yet**. More improvements are planned.  
-
----
-
 # Mentor-Mentee Communication App  
 
 A web application aimed at simplifying communication between mentors and mentees.  
 Currently under development — only core features are implemented, UI/UX and advanced features are still in progress.  
+
+---
+
+# ⚠️ Work in Progress  
+
+This project is still under development. It currently has only the basic features and is **not user-friendly yet**. More improvements are planned.  
 
 ---
 
@@ -36,7 +36,7 @@ This project is a team effort:
 
 ---
 
-##🚧 Status
+## 🚧 Status
 Development Phase 🏗️
 
 - Not user-friendly yet
@@ -45,7 +45,7 @@ Development Phase 🏗️
 
 ---
 
-🎯 Planned Features
+## 🎯 Planned Features
 Real-time chat with better UI
 
 - Session scheduling & reminders
