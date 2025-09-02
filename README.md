@@ -23,7 +23,6 @@ This project is still under development. It currently has only the basic feature
 - **Frontend:** React.js (basic setup, not fully optimized)  
 - **Backend:** Spring Boot (Java)  
 - **Database:** PostgreSQL  
-- **Authentication:** JWT (basic implementation)  
 
 ---
 
